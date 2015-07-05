@@ -1,0 +1,140 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 03-jul-2015, 23:51:23
+    Author     : Sammy Guergachi <sguergachi at gmail.com>
+*/
+
+body
+{
+    background: lightgray;
+    margin: 0;
+    padding: 0px;
+}
+
+div
+{
+    background: lightgray;
+
+}
+
+#nav
+{
+    display: inline-block;
+    background: #04B45F;
+    color: white;
+    margin: 0px;
+    padding: 8px;
+    text-align: center;
+    font-size: 18px;
+    width: 100%;
+}
+
+#final
+{
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    
+    background: #04B45F;
+    border-radius: 20px;
+    box-shadow: 5px 5px 0px #088A4B ;
+    color: white;
+    margin: 0 auto;
+    margin-top: 10px;
+    text-align: center;
+    transition: ease 1s;
+    -webkit-transition: ease 1s;
+    padding: 16px;
+    width: 800px;
+}
+
+#presentacion
+{
+        
+    background: #009999;
+    border-radius: 20px;
+    box-shadow: 5px 5px 0px #006666 ;
+    color: white;
+    margin: 0 auto;
+    margin-top: 10px;
+    text-align: center;
+    transition: ease 1s;
+    -webkit-transition: ease 1s;
+    padding: 16px;
+    width: 90%;
+}
+
+#formulario
+{
+        
+    background: #009999;
+    border-radius: 20px;
+    box-shadow: 5px 5px 0px #006666 ;
+    color: white;
+    margin: 0 auto;
+    margin-top: 10px;
+    text-align: center;
+    transition: ease 1s;
+    -webkit-transition: ease 1s;
+    padding: 16px;
+    width: 90%;
+}
+
+#todo
+{
+        
+    background: #000000;
+    
+    margin: 0 auto;
+    margin-top: 0px;
+    padding: 16px;
+    width: 100%;
+    height: 100%
+}
+
+
+
+
+#final:hover
+{
+    font-size: 18px;
+    width: 900px;
+}
+
+
+A:link {text-decoration:none;color:#000000;}
+
+
+A:visited {text-decoration:none;color:#000000;}
+
+#footer
+{
+    display: inline-block;
+    background: rgb(0,0,0);
+    color: #FFFFFF;
+    text-align: center;
+    margin: 0;
+    width: 100%;
+    padding: 1em 2em;
+    
+    bottom: 0;
+}
+
+
+#footerfinal
+{
+    display: inline-block;
+    background: rgb(0,0,0);
+    color: #FFFFFF;
+    text-align: center;
+    margin: 0;
+    width: 100%;
+    padding: 1em 2em;
+    position: fixed;
+    bottom: 0;
+}
