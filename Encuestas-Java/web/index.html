@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Encuesta Curso Java</title>
+        <meta charset="UTF-8">
+        <link href="css/index-css.css" rel="stylesheet" type="text/css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div id="nav">
+            <center><h2>Centro de Aprendizaje Digital</h2></center>
+            <center><h3>Encuesta: Curso Java desde Cero</h3></center></div>
+
+        <div id="todo">
+
+
+
+            <div id="presentacion">
+                <p>Bienvenido, esta encuesta se realiza para conocer el grado de factibilidad que nos permita iniciar en el Centro de Aprendizaje Digital un curso de "Programacion en Java desde cero"</p>
+                <p>Este curso tendra una duración efectiva aproximada de 30 horas, Se publicara el o los horarios en base a la opinion de la gente y la demanda del mismo, el mapa de contenidos lo puedes checar <a href="#" target="_blank">aqui</a></p>
+                <p>El curso será Teorico-Practico sin valor curricular y se entregara al termino una constancia de asistencia al curso . </p>
+
+                Requisitos:
+                <ol type="I">
+                    <li>Saber manejar la computadora</li>
+                    <li>Ganas de aprender</li>
+                    <li>Ser mayor de 15 años</li>
+                </ol>
+
+                Materiales:
+                <ol type="I">
+                    <li>Cuaderno</li>
+                    <li>Boligrafo</li>
+                    <li>Memoria USB</li>
+                </ol>
+
+
+            </div>
+            <br><br>
+
+            <div id="formulario">
+                <form action="./send_data" method="POST" id="enc">
+
+                    <label>Nombre Completo:</label><input type="text" name="nombre" required placeholder="Nombre Completo"/><br><br>
+                    <label>Email de Contacto: </label> <input type="email" name="email" required placeholder="E-Mail"/><br><br>
+
+                    <br>
+                    <br><br>
+                    <label>¿Le interesa tomar un curso de programación en Java?</label>
+                    <input type="radio" name="curso" required value="Si"/> Si
+                    <input type="radio" name="curso"  required value="No"/> No
+
+                    <br>
+                    <br>
+                    <br>
+
+                    <label>¿Cuanto estaria dispuesto a pagar por este curso?</label>
+                    <input type="radio" name="money" required  value="<500"/> menos de $600
+                    <input type="radio" name="money" required value="500 a 800"/> entre $600 y $1,000
+                    <input type="radio" name="money" required value=">800"/> mas de $1,000
+
+                    <br>
+                    <br>
+                    <br>
+
+                    <label>¿Prefiere tomar el curso entre semana o los fines de semana?</label>
+                    <input type="radio" name="days" required value="Entre semana"/> Entre semana
+                    <input type="radio" name="days" required value="Fines de semana"/> Fines de Semana
+
+                    <br>
+                    <br>
+                    <br>
+
+                    <label>¿Esta de acuerdo con los requsitos y materiales solicitados para este curso?</label>
+                    <input type="radio" name="OK" required value="Si"/> Si
+                    <input type="radio" name="OK" required value="No"/> No
+
+                    <br><br><br>
+
+                    <label>Comentarios:</label>
+                    <textarea rows="5" cols="60" name="coment" form="enc" placeholder="Comentarios:"></textarea>
+
+                    <br><br><br><br>            
+
+                    <input type="reset" value="Borrar Todo"/>
+                    <input type="submit" value="Enviar Respuestas"/>
+
+                </form>
+            </div>
+            
+        </div>
+        
+        <div id="footer">
+
+            Centro de Aprendizaje Digital 2015 
+            Easysoft Company
+
+        </div>
+        
+    </body>
+
+</html>
