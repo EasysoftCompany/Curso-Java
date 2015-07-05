@@ -51,8 +51,8 @@ public class send_data extends HttpServlet {
 
             String msg = "Aspirante: " + nombre + "<br><br> Enviado desde: " + maquina + "<br><br> Email de Contacto: " + email + "<br><br> Le interesa el curso: " + R_curso + "<br><br> Estaria dispuesto a pagar: " + R_money + "<br><br> Prefiere que sea: " + R_days + "<br><br> Esta de acuerdo con los requisitos: " + R_requisitos + "<br><br> Comentarios: " + comentarios;
 
-//            Logica.cMail mailto = new Logica.cMail(mail, "Respuestas de la encuesta", msg);
-//            mailto.SendMail();
+            Logica.cMail mailto = new Logica.cMail(mail, "Respuestas de la encuesta", msg);
+            mailto.SendMail();
 
             /* TODO output your page here. You may use following sample code. */
             out.println("<!DOCTYPE html>");
